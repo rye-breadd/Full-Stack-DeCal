@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Addition Game</title>
+</head>
+
+<body>
+    <h1>Welcome to my game!</h1>
+</body>
+
+<script>
+    alert("Let's play a math game! If you choose it right you win!");
+
+    const first_Question = prompt('What is 2+2?');
+    
+    if (first_Question == 4) {
+        console.log(first_Question);
+        alert("Wrong! The answer is 6!" );
+    } else {
+        alert("You are right!");
+    }
+
+    const second_Question = prompt('What is 9+10?');
+
+    if (second_Question == 21) {
+        console.log(second_Question);
+        alert("You are right!!!!");
+    } else {
+        alert("You're dumb asf");
+    }
+
+    function addTogether() {
+        return parseInt(first_Question) + parseInt(second_Question);
+    }
+
+    alert(`Now let's add those two together and we get..... ${addTogether()}`)
+    console.log(addTogether())
+
+</script>
